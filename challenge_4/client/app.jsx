@@ -164,9 +164,15 @@ class Game extends React.Component {
       playArea.push(<div className='row' key={y}>{row}</div>)
     }
     if(!this.winner) {
+      var name = '';
+      if(this.state.player === 'X') {
+        name = 'Red';
+      } else {
+        name = 'Yellow';
+      }
       return (
         <div>
-          <div>Player {this.state.player}'s turn</div>
+          <div>Player {name}'s turn</div>
           <div>Click on a column to drop a piece</div>
           <div>{playArea}</div>
         </div>
