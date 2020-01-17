@@ -85,10 +85,10 @@ class Game extends React.Component {
 
         }
         if(countX === 4) {
-          return 'X';
+          return 'Red';
         }
         if(countO === 4) {
-          return 'Y';
+          return 'Yellow';
         }
       }
     }
